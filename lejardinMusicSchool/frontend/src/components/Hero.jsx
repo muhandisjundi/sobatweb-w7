@@ -23,8 +23,16 @@ const Hero = () => {
     <section
       id="home"
       onMouseMove={handleMouseMove}
-      className="relative min-h-screen flex flex-col justify-center pt-20 overflow-hidden bg-[#0A0F1C] text-slate-100"
+      className="relative min-h-screen flex flex-col justify-center pt-40 md:pt-20 overflow-hidden bg-[#0A0F1C] text-slate-100"
     >
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0A0F1C]/90 via-[#0A0F1C]/80 to-[#0A0F1C] z-10" />
+        <img
+          src="https://images.unsplash.com/photo-1552422535-c45813c61732?w=1600"
+          alt="Background"
+          className="w-full h-full object-cover opacity-40"
+        />
+      </div>
       {/* Parallax Orbs - Nuansa Emas dan Biru Royal */}
       <motion.div
         style={{ x: smoothX, y: smoothY }}
@@ -69,7 +77,7 @@ const Hero = () => {
           transition={{ delay: 0.4, duration: 1 }}
           className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light tracking-wide leading-relaxed"
         >
-          Menumbuhkan talenta musik di lingkungan artistik. 
+          Menumbuhkan talenta musik di lingkungan artistik.
           Dari teknik fundamental hingga ekspresi panggung yang memukau.
         </motion.p>
 
@@ -98,7 +106,7 @@ const Hero = () => {
             <div key={group} className="flex gap-12 items-center">
               {["Piano", "Violin", "Vocal", "Cello", "Classical Guitar", "Music Theory"].map((instrument) => (
                 <div key={instrument} className="flex items-center gap-12">
-                   <span className="text-black text-2xl font-black uppercase italic tracking-tighter">
+                  <span className="text-black text-2xl font-black uppercase italic tracking-tighter">
                     • {instrument}
                   </span>
                   <Disc size={20} className="text-black/30 animate-spin-slow" />

@@ -38,7 +38,7 @@ const Navbar = () => {
       >
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 bg-[#D4AF37] rounded-xl flex items-center justify-center text-black font-black text-lg shadow-lg">L</div>
-          <span className="font-black text-slate-900 tracking-tighter text-xl uppercase italic">LE JARDIN</span>
+          <span className="font-black text-[#D4AF37] tracking-tighter text-xl uppercase italic">LE JARDIN</span>
         </div>
 
         <div className="hidden md:flex gap-10 items-center font-bold text-[10px] uppercase tracking-[0.2em] text-slate-600">

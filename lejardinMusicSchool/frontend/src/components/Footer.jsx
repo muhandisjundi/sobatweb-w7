@@ -1,4 +1,4 @@
-import { Instagram, Twitter, Globe, Send, Mail, Phone } from 'lucide-react';
+import { Instagram, Twitter, Globe, Send, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -27,30 +27,43 @@ const Footer = () => {
 
           <div>
             <h4 className="font-bold uppercase text-[10px] tracking-[0.3em] text-[#D4AF37] mb-6">Connect</h4>
-            <div className="space-y-2 text-slate-400 text-sm">
-              <p>Instagram: @lejardin.music</p>
-              <p>Email: admissions@lejardin.com</p>
-              <p>Phone: +62 21 555 0123</p>
+            <div className="space-y-4 text-slate-400 text-sm">
+              <a href="https://instagram.com/lejardinmusicschool" target="_blank" rel="noreferrer" className="flex items-center gap-3 hover:text-[#D4AF37] transition-colors">
+                <Instagram size={18} className="text-[#D4AF37]" />
+                <span>@lejardinmusicschool</span>
+              </a>
+              <a href="mailto:lejardin@gmail.com" className="flex items-center gap-3 hover:text-[#D4AF37] transition-colors">
+                <Mail size={18} className="text-[#D4AF37]" />
+                <span>lejardin@gmail.com</span>
+              </a>
+              <a href="https://wa.me/628367787588" target="_blank" rel="noreferrer" className="flex items-center gap-3 hover:text-[#D4AF37] transition-colors">
+                <Phone size={18} className="text-[#D4AF37]" />
+                <span>08367787588</span>
+              </a>
+              <a href="https://maps.google.com/?q=Ruko+Maggiore+Grande+Blok+H.+3,+Gading,+Kec.+Serpong,+Kabupaten+Tangerang,+Banten+15332" target="_blank" rel="noreferrer" className="flex items-start gap-3 hover:text-[#D4AF37] transition-colors">
+                <MapPin size={18} className="text-[#D4AF37] mt-1 shrink-0" />
+                <span>Ruko Maggiore Grande Blok H. 3, Gading, Kec. Serpong, Kabupaten Tangerang, Banten 15332</span>
+              </a>
             </div>
           </div>
 
           <div className="text-right">
-             <h4 className="font-bold uppercase text-[10px] tracking-[0.3em] text-[#D4AF37] mb-6">Newsletter</h4>
-             <div className="relative">
-                <input type="text" placeholder="Email Address" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white outline-none focus:border-[#D4AF37]" />
-                <button className="absolute right-1 top-1 bottom-1 bg-[#D4AF37] text-black px-4 rounded-lg font-bold text-xs uppercase">Join</button>
-             </div>
+            <h4 className="font-bold uppercase text-[10px] tracking-[0.3em] text-[#D4AF37] mb-6">Newsletter</h4>
+            <div className="relative">
+              <input type="text" placeholder="Email Address" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white outline-none focus:border-[#D4AF37]" />
+              <button className="absolute right-1 top-1 bottom-1 bg-[#D4AF37] text-black px-4 rounded-lg font-bold text-xs uppercase">Join</button>
+            </div>
           </div>
         </div>
-        
+
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-[9px] font-bold text-slate-600 uppercase tracking-[0.4em]">© 2026 LE JARDIN MUSIC SCHOOL. AN ARTISTIC LEGACY.</p>
           <div className="flex gap-4">
-             {/* Social Icons with hover gold effect */}
+            {/* Social Icons with hover gold effect */}
           </div>
         </div>
       </div>
-    </footer>
+    </footer >
   );
 };
 

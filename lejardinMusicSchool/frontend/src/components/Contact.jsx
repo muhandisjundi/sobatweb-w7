@@ -26,17 +26,17 @@ const Contact = () => {
             </form>
           </motion.div>
 
-          <motion.div className="relative rounded-[4rem] overflow-hidden border border-white/10">
-             <iframe 
-                src="https://www.google.com/maps/embed?pb=..." // Ganti dengan lokasi asli
-                className="w-full h-full grayscale invert opacity-60" 
-                style={{ border: 0 }} 
-                allowFullScreen="" 
-             />
-             <div className="absolute top-8 left-8 bg-black/80 backdrop-blur-md p-6 rounded-3xl border border-[#D4AF37]/30">
-                <p className="text-[#D4AF37] font-black text-xs uppercase tracking-[0.3em] mb-1">Visit Our Campus</p>
-                <p className="text-white font-bold text-sm">Le Jardin Music Tower, SCBD Jakarta</p>
-             </div>
+          <motion.div className="relative rounded-[4rem] overflow-hidden border border-white/10 h-[500px] lg:h-auto">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.9379724384266!2d106.63067758083344!3d-6.2718873460525275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb037e90cbaf%3A0x79b0dceef363a8ee!2sLEJARDIN%20Music%20School!5e0!3m2!1sid!2sid!4v1770896717667!5m2!1sid!2sid"
+              className="w-full h-full grayscale invert opacity-60"
+              style={{ border: 0 }}
+              allowFullScreen=""
+            />
+            <div className="absolute top-8 left-8 bg-black/80 backdrop-blur-md p-6 rounded-3xl border border-[#D4AF37]/30 max-w-xs">
+              <p className="text-[#D4AF37] font-black text-xs uppercase tracking-[0.3em] mb-1">Visit Our Studio</p>
+              <p className="text-white font-bold text-sm">Ruko Maggiore Grande Blok H. 3, Gading, Kec. Serpong, Kabupaten Tangerang, Banten 15332</p>
+            </div>
           </motion.div>
         </div>
       </div>

@@ -25,7 +25,7 @@ const Navbar = () => {
         transition={{ type: 'spring', stiffness: 260, damping: 20 }}
         className={`
           pointer-events-auto flex justify-between items-center 
-          rounded-full px-8 py-4 transition-all duration-500
+          rounded-full px-6 md:px-8 py-3 md:py-4 transition-all duration-500
           backdrop-blur-md border shadow-2xl
           ${scrolled
             ? 'bg-white/10 border-white/20 shadow-indigo-500/10'
@@ -41,7 +41,7 @@ const Navbar = () => {
           <span className="font-black text-[#D4AF37] tracking-tighter text-xl uppercase italic">LE JARDIN</span>
         </div>
 
-        <div className="hidden md:flex gap-10 items-center font-bold text-[10px] uppercase tracking-[0.2em] text-slate-600">
+        <div className="hidden md:flex gap-10 items-center font-bold text-[10px] uppercase tracking-[0.2em] text-white/90">
           {links.map((item) => (
             <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-[#D4AF37] transition-all hover:scale-105 relative group">
               {item}
@@ -50,7 +50,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        <button className="md:hidden text-slate-900" onClick={() => setIsOpen(!isOpen)}>
+        <button className="md:hidden text-white" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </motion.div>
@@ -61,10 +61,10 @@ const Navbar = () => {
             initial={{ opacity: 0, scale: 0.95, y: 10 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 10 }}
-            className="absolute top-28 left-6 right-6 bg-white/10 backdrop-blur-3xl shadow-2xl rounded-[2.5rem] p-8 flex flex-col gap-6 md:hidden border border-white/20 pointer-events-auto"
+            className="absolute top-24 left-6 right-6 bg-white/10 backdrop-blur-3xl shadow-2xl rounded-[2.5rem] p-8 flex flex-col gap-6 md:hidden border border-white/20 pointer-events-auto"
           >
             {links.map((item) => (
-              <a key={item} href={`#${item.toLowerCase()}`} onClick={() => setIsOpen(false)} className="text-xl font-bold text-slate-900 hover:text-indigo-600 transition-colors">
+              <a key={item} href={`#${item.toLowerCase()}`} onClick={() => setIsOpen(false)} className="text-xl font-bold text-white hover:text-[#D4AF37] transition-colors">
                 {item}
               </a>
             ))}

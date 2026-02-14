@@ -37,7 +37,7 @@ const Chatbot = () => {
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            className="mb-6 w-[350px] md:w-[400px] h-[580px] bg-[#0A0F1C] shadow-2xl rounded-[2.5rem] border border-[#D4AF37]/20 overflow-hidden flex flex-col"
+            className="fixed bottom-24 left-1/2 -translate-x-1/2 md:static md:translate-x-0 md:mb-6 w-[85vw] max-w-[350px] h-[65vh] md:h-[580px] bg-[#0A0F1C] shadow-2xl rounded-[2.5rem] border border-[#D4AF37]/20 overflow-hidden flex flex-col z-[100000]"
           >
             {/* Header */}
             <div className="bg-[#D4AF37] p-6 text-black flex justify-between items-center">
